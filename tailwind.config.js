@@ -36,7 +36,8 @@ module.exports = {
           '600': '#9c2a9e',
           '700': '#822383',
           '800': '#681c69',
-          '900': '#551756'
+          '900': '#551756',
+          'base':'#ad2faf'
         },//secondary
         'blue-gray':colors.blueGray,
         'amber':colors.amber,
