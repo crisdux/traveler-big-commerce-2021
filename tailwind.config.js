@@ -27,20 +27,20 @@ module.exports = {
           'base': '#00BFA6'
         },//primary
         'secondary': {
-          '50': '#fbf5fb',
-          '100': '#f7eaf7',
-          '200': '#ebcbeb',
-          '300': '#deacdf',
-          '400': '#c66dc7',
-          '500': '#ad2faf',
-          '600': '#9c2a9e',
-          '700': '#822383',
-          '800': '#681c69',
-          '900': '#551756',
-          'base':'#ad2faf'
-        },//secondary
-        'blue-gray':colors.blueGray,
-        'amber':colors.amber,
+          '50': '#f5f5f7',
+          '100': '#ececee',
+          '200': '#cfcfd5',
+          '300': '#b2b1bb',
+          '400': '#797789',
+          '500': '#3F3D56',
+          '600': '#39374d',
+          '700': '#2f2e41',
+          '800': '#262534',
+          '900': '#1f1e2a',
+          'base': '#3f3d56',
+        },
+        'blue-gray': colors.blueGray,
+        'amber': colors.amber,
       },//colors
     },
   },
@@ -49,4 +49,5 @@ module.exports = {
   },
   plugins: [],
 }
+
 

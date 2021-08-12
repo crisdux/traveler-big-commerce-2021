@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- SCROLL REVEAL  -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Document</title>
 </head>
 
-<body class="font-poppins">
+<body class="font-poppins bg-gray-100">
     <!-- 👇🏼 HEADER 👇🏼  -->
     <header>
-        <nav class="container bg-gray-200 flex justify-between items-center">
+        <nav class="container flex justify-between items-center pt-8 sm:pt-12 headline">
             <div>
                 <a href="/">
                     <img src="./img/header/logo_principal.png" alt="logo_principal">
                 </a>
             </div>
 
-            <div class="hidden sm:flex items-center text-blue-gray-900 space-x-4">
+            <div class="hidden sm:flex items-center text-blue-gray-900 space-x-4 ">
                 <a class="px-3 py-2 rounded tracking-wider uppercase text-xs hover:text-blue-gray-700"
                     href="#">Catalogo</a>
                 <a class="px-3 py-2 rounded tracking-wider uppercase text-xs hover:text-blue-gray-700"
@@ -28,61 +30,425 @@
                     href="#">Contacto</a>
                 <button
                     class="px-5 py-3 rounded tracking-wider uppercase text-xs bg-amber-500 hover:bg-amber-400 transition ease-in duration-300 text-blue-gray-200 hover:text-blue-gray-700 shadow-md">
-                    <sapan class="flex items-center space-x-1">
+                    <span class="flex items-center space-x-1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
-                          </svg>
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                clip-rule="evenodd" />
+                        </svg>
                         <p>Login</p>
-                    </sap>
+                    </span>
                 </button>
             </div>
 
+
             <div class="flex sm:hidden justify-end">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                <button type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
 
     <!-- 👇🏼 HERO 👇🏼  -->
-    <section class="container grid grid-cols-1 sm:grid-cols-2 gap-2 my-10 bg-gray-100">
+    <section class="container grid grid-cols-1 sm:grid-cols-2 gap-2 my-1 sm:my-8 bg-gray-100">
         <!-- title  -->
         <div class="space-y-4 xl:my-16">
             <h1 class="text-4xl text-center sm:text-5xl sm:text-left text-blue-gray-800 mt-5">
-                Lorem ipsum dolor sit amet.
+                Lorem ipsum dolor sit <span class="typed text-amber-500"></span>
             </h1>
-            <p class="text-blue-gray-700 tracking-wide">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio accusantium soluta, nemo reiciendis recusandae sequi dolore maxime dolorem incidunt libero!
+            <p class="text-blue-gray-700 tracking-wide smooth">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+                accusantium soluta, nemo reiciendis recusandae sequi dolore maxime dolorem incidunt libero!
             </p>
             <div class="flex justify-center md:justify-start flex-wrap">
-                <button class="btn btn-primary hover:bg-primary-300 hover:text-blue-gray-800 hover:shadow-lg hover:text-opacity-75 mt-3 mr-3" type="button">
+                <button
+                    class="btn btn-primary hover:bg-primary-300 hover:text-blue-gray-800 hover:shadow-lg hover:text-opacity-75 mt-3 mr-3"
+                    type="button">
                     <span class="flex space-x-1 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+                            <path fill-rule="evenodd"
+                                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                clip-rule="evenodd" />
                         </svg>
-                          <p>Comenzar</p>
+                        <p>Comenzar</p>
                     </span>
                 </button>
-                <button class="btn btn-outline-primary hover:bg-primary-base hover:text-white hover:border-transparent mt-3 mr-3" type="button">
+                <button
+                    class="btn btn-outline-primary hover:bg-primary-base hover:text-white hover:border-transparent mt-3 mr-3"
+                    type="button">
                     <span class="flex space-x-1 items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
                         <p>Consultar</p>
-                    </span>  
+                    </span>
                 </button>
             </div>
         </div>
         <!-- img  -->
-        <div class="sm:flex items-center mt-8">
-            <img src="./img/hero/hero.svg" alt="">
+        <div class="sm:flex items-center mt-8 entrada-der">
+            <img class="" src="./img/hero/hero.svg" alt="">
         </div>
     </section>
 
-    <section class="bg-red-500">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur molestias quo dolores qui consequuntur corporis voluptatibus reprehenderit nostrum odit, nobis quasi minima recusandae esse quae, exercitationem quia corrupti voluptas architecto.</p>
+    <!--👇🏼  MAIN 👇🏼  -->
+    <main class="container bg-blue-gray-100 pt-10 sm:pt-5">
+        <!-- header  -->
+        <div class="container space-x-4 space-y-4 sm:w-3/4 lg:w-5/12">
+            <h2 class="text-3xl text-center text-blue-gray-800">Lorem ipsum dolor sit amety <span
+                    class="font-semibold px-1">consectetur</span> adipisicing elit.</h2>
+            <p class="text-blue-gray-700 font-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In rerum repellendus, saepe dignissimos </p>
+        </div>
+         <!-- card 1  -->
+        <article class="container grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-2 my-10 entrada-izq">
+            <!-- img  -->
+            <div class="">
+                <img src="./img/main/traveler_1.svg" alt="">
+            </div>
+            <!-- contenido  -->
+            <div class="flex flex-col justify-center items-center sm:items-start">
+                <h3 class="text-2xl text-center text-blue-gray-800">Lorem ipsum dolor sit ame</h3>
+                <p class="text-blue-gray-700 font-light tracking-wide py-3">
+                    Coroico es una pequeña ciudad y municipio boliviano, capital de la provincia de <span
+                        class="bg-primary-base px-1">Nor Yungas</span> del Departamento de La Paz. Se encuentra ubicada
+                    al noreste del departamento de La Paz, y al este de la cordillera Oriental de los Andes, en la
+                    región de los Yungas.
+                </p>
+                <button
+                    class="btn-small sm:btn btn-secundary hover:bg-secondary-700 hover:text-gray-100 hover:shadow-lg w-1/2 sm:w-1/2 lg:w-1/3 ">
+                    Leer más
+                </button>
+            </div>
+        </article>
+        <!-- card 2  -->
+        <article class=" container grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-2 mb-10 entrada-der">
+            <!-- contenido  -->
+            <div class="flex flex-col justify-center items-center sm:items-start">
+                <h3 class="text-2xl text-center text-blue-gray-800">Lorem ipsum dolor sit ame</h3>
+                <p class="text-blue-gray-700 font-light tracking-wide py-3">
+                    <span class="bg-primary-base px-1">El valle de la Luna</span> es un área protegida municipal​ y
+                    formación geológica de la ciudad de La Paz, se encuentra a unos 10 kilómetros del centro urbano de
+                    la ciudad y administrativamente pertenece al Macro distrito de Mallasa.
+                </p>
+                <img class="sm:hidden" src="./img/main/traveler_2.svg" alt="">
+
+                <button
+                class="hidden sm:flex justify-center btn-small sm:btn btn-secundary hover:bg-secondary-700 hover:text-gray-100 hover:shadow-lg w-1/2 sm:w-1/2 lg:w-1/3">
+                Leer más
+                </button>
+
+            </div>
+            <!-- img  -->
+            <div class="flex justify-center mt-2">
+                <button
+                class="sm:hidden btn-small sm:btn btn-secundary hover:bg-secondary-700 hover:text-gray-100 hover:shadow-lg w-1/2 sm:w-1/2 lg:w-1/3">
+                Leer más
+                </button>
+                <img class="hidden sm:flex " src="./img/main/traveler_2.svg" alt="">
+            </div>
+        </article>
+
+        <!-- card 3  -->
+        <article class="  container grid grid-cols-1 sm:grid-cols-2 sm:items-center gap-2 mb-10 entrada-izq">
+            <!-- img  -->
+            <div class="">
+                <img src="./img/main/traveler_3.svg" alt="">
+            </div>
+            <!-- contenido  -->
+            <div class="flex flex-col justify-center items-center sm:items-start">
+                <h3 class="text-2xl text-center text-blue-gray-800">Lorem ipsum dolor sit ame</h3>
+                <p class="text-blue-gray-700 font-light tracking-wide py-3">
+                    Copacabana es una ciudad boliviana en el lago <span class="bg-primary-base px-1">Titicaca</span>,
+                    conocida por los festivales religiosos y las casas con tejados rojos. Es una base para explorar la
+                    Isla del Sol y la Isla de la Luna, que tienen sitios arqueológicos incas sagrados. Cerca de la plaza
+                    principal de <span class="bg-primary-base px-1">Copacabana</span>, la Plaza 2 de Febrero, está la
+                    Catedral de la Virgen de la Candelaria, un importante sitio de peregrinación con domos moriscos y la
+                    escultura de la Virgen de la Candelaria.
+                </p>
+                <button
+                    class="btn-small sm:btn btn-secundary hover:bg-secondary-700 hover:text-gray-100 hover:shadow-lg w-1/2 sm:w-1/2 lg:w-1/3">
+                    Leer más
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <!-- 👇🏼 DESCARGAS 👇🏼 -->
+    <section class="pt-16">
+        <!-- header  -->
+        <div class="container space-x-4 space-y-4 sm:w-3/4 lg:w-5/12 pb-10 entrada-abajo">
+            <h2 class="text-3xl text-center text-blue-gray-800">Puedes <span
+                    class="bg-secondary-base text-gray-100 font-medium px-1">descargar</span> los catalogos de nuestros
+                servicios en los siguientes enlaces</h2>
+            <p class="text-blue-gray-700 font-light text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. In rerum repellendus, saepe dignissimos </p>
+        </div>
+
+        <div class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-10">
+            <!-- card 1  -->
+            <div class="shadow-md rounded-b-lg headline">
+                <div class="">
+                    <img class="rounded-t-lg" src="./img/main/main_1.jpg" alt="main-1">
+                </div>
+                <div class="py-4">
+                    <div class="px-6">
+                        <h4 class="text-2xl text-center text-blue-gray-800 font-medium">Lorem ipsum dolor sit amet
+                            adipisicing.</h4>
+                        <p class="text-blue-gray-700 font-light tracking-wide pt-3">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Necessitatibus, velit expedita eligendi dolore eveniet
+                            molestias?</p>
+                    </div>
+                    <footer class="flex justify-center pt-4">
+                        <button
+                            class="btn-small btn-outline-primary hover:bg-primary-base hover:text-white hover:border-transparent ">
+                            <span class="flex space-x-1 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <p class="text-base">Ver más</p>
+                            </span>
+                        </button>
+                    </footer>
+                </div>
+            </div>
+            <!-- card 2  -->
+            <div class="shadow-md rounded-b-lg headline">
+                <div>
+                    <img class="rounded-t-lg" src="./img/main/main_2.jpg" alt="main-1">
+                </div>
+                <div class="py-4">
+                    <div class="px-6">
+                        <h4 class="text-2xl text-center text-blue-gray-800 font-medium">Lorem ipsum dolor sit amet
+                            adipisicing.</h4>
+                        <p class="text-blue-gray-700 font-light tracking-wide pt-3">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Necessitatibus, velit expedita eligendi dolore eveniet
+                            molestias?</p>
+                    </div>
+                    <footer class="flex justify-center pt-4">
+                        <button
+                            class="btn-small btn-outline-primary hover:bg-primary-base hover:text-white hover:border-transparent ">
+                            <span class="flex space-x-1 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <p class="text-base">Ver más</p>
+                            </span>
+                        </button>
+                    </footer>
+                </div>
+            </div>
+            <!-- card 3  -->
+            <div class="shadow-md rounded-b-lg headline">
+                <div>
+                    <img class="rounded-t-lg" src="./img/main/main_3.jpg" alt="main-1">
+                </div>
+                <div class="py-4">
+                    <div class="px-6">
+                        <h4 class="text-2xl text-center text-blue-gray-800 font-medium">Lorem ipsum dolor sit amet
+                            adipisicing.</h4>
+                        <p class="text-blue-gray-700 font-light tracking-wide pt-3">Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Necessitatibus, velit expedita eligendi dolore eveniet
+                            molestias?</p>
+                    </div>
+                    <footer class="flex justify-center pt-4">
+                        <button
+                            class="btn-small btn-outline-primary hover:bg-primary-base hover:text-white hover:border-transparent ">
+                            <span class="flex space-x-1 items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                                <p class="text-base">Ver más</p>
+                            </span>
+                        </button>
+                    </footer>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- 👇🏼 CLIENTES 👇🏼 -->
+    <section class="py-16">
+        <!-- header  -->
+        <div class="container space-x-4 space-y-4 sm:w-3/4 lg:w-5/12 ">
+            <h2 class="text-3xl text-center text-blue-gray-800">Puedes <span
+                    class="bg-secondary-base text-gray-100 font-medium px-1">descargar</span> los catalogos de nuestros
+                servicios en los siguientes enlaces</h2>
+            <p class="text-blue-gray-700 font-light text-center pb-10">Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptatem fugiat <span class="bg-primary-base px-1">tempore</span> et iusto nam esse sapiente quaerat obcaecati id architecto sequi
+                eligendi, perferendis <span class="font-semibold">aspernatur</span> dolor a quis doloribus consequatur adipisci!</p>
+        </div>
+
+        <div class="container flex justify-evenly flex-wrap gap-4 my-10">
+            <div class="">
+                <figure class="">
+                    <img src="./img/logos/logo_asus.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_dell.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_discord.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_facebook.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="">
+                    <img src="./img/logos/logo_google.svg" alt="" class="w-28">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_samsung.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_ubuntu.svg" alt="" class="w-32">
+                </figure>
+            </div>
+            <div class="">
+                <figure class="flex-1">
+                    <img src="./img/logos/logo_youtube.svg" alt="" class="w-32">
+                </figure>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 👇🏼 CONTACTO 👇🏼  -->
+    <section class="bg-primary-base text-white py-20">
+        <div class="container">
+            <div class="sm:w-3/4 lg:w-2/4 mx-auto">
+                <p class="text-center uppercase tracking-wide text-blue-gray-800 font-medium text-lg">
+                    35000 para unirte
+                </p>
+                <p class="text-blue-gray-800 text-center font-medium py-10 text-3xl">
+                    Lorem, ipsum dolor sit amet <span class="text-gray-100 bg-secondary-700 px-1">consectetur</span>
+                    adipisicing elit. Aspernatur, explicab
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 mt-8">
+                    <input type="text" placeholder="Email por favor..."
+                        class="focus:outline-none flex-1 px-2 py-3 rounded-md text-black">
+
+                    <button type="button" class="btn btn-secundary hover:bg-secondary-700 hover:text-gray-100 
+                    hover:shadow-lg">
+                        <span class="flex items-center justify-center space-x-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-pulse" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                            <p class="animate-pulse">Enviar</p>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 👇🏼 FOOTER 👇🏼  -->
+    <footer class="bg-blue-gray-900 py-16 sm:py-20">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6">
+                <!-- logo  -->
+                <div class="flex justify-center md:pr-10">
+                    <img src="./img/header/logo-bookmark.svg" alt="">
+                </div>
+                <!-- links  -->
+                <div class="text-gray-100 flex flex-col items-center sm:flex-row justify-center">
+                    <a class="px-3 py-2 rounded tracking-wider uppercase text-xs hover:text-gray-50"
+                        href="#">Catalogo</a>
+                    <a class="px-3 py-2 rounded tracking-wider uppercase text-xs hover:text-gray-50"
+                        href="#">Precios</a>
+                    <a class="px-3 py-2 rounded tracking-wider uppercase text-xs hover:text-gray-50"
+                        href="#">Contacto</a>
+                </div>
+                <!-- redes  -->
+                <div class="flex justify-evenly md:pl-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                      </svg>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github cursor-pointer" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- TYPE.JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="../js/type/main.js"></script>
+
+    <script>
+            window.sr = ScrollReveal()
+        sr.reveal(".entrada-izq",{
+            origin: 'left',
+            //interval: 106,
+            duration: 2000,
+            distance: '150%'
+        });
+        sr.reveal(".entrada-der",{
+            origin: 'right',
+            //interval: 106,
+            duration: 2000,
+            distance: '150%'
+        });
+        sr.reveal(".entrada-abajo",{
+            origin: 'bottom',
+        // interval: 106,
+            duration: 2000,
+            distance: '150%'
+        });
+        ScrollReveal().reveal('.headline');
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>
